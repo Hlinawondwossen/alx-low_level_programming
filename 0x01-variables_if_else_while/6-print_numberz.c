@@ -1,17 +1,13 @@
 #include <stdio.h>
-
 /**
- * main - prints 0 to 10
- * Return: 0
-*/
-
+ * Return: nothing if successful
+ */
 int main(void)
 {
+	int i;
 
-int i;
-
-for (i = 0; i < 10; i++)
-putchar(i + '0');
-putchar('\n');
-return (0);
-}}
+	for (i = 0; i < 10; i++)
+		putchar (i + '0');
+	putchar('\n');
+	return (0);
+}
