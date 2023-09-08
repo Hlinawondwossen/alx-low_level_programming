@@ -1,14 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase reverse order
+ * main - prints 0 to 10
  * Return: 0
 */
+
 int main(void)
 {
-char c;
-for (c = 'z'; c >= 'a'; c--)
-putchar(c);
+
+int i;
+
+for (i = 0; i < 10; i++)
+putchar(i + '0');
 putchar('\n');
 return (0);
-}
+}}
