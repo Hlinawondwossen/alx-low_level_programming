@@ -1,26 +1,16 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints a to z
- * Return: 0
-*/
+ * print_alphabet - make the alphabet
+ * Return: void
+ */
 void print_alphabet(void)
 {
-char letter = 'a';
-while (letter <= 'z')
-{
-_putchar(letter);
-letter++;
-}
-_putchar('\n');
-}
+	char c;
 
-/**
- * main - main function
- * Return: 0
-*/
-int main(void)
-{
-print_alphabet();
-return (0);
+	for (c = 'a'; c <= 'z'; c++)
+	{
+	_putchar(c);
+	}
+	_putchar('\n');
 }
