@@ -17,7 +17,7 @@ j = k - j;
 ++i;
 
 }
-printf("%d\n", sum);
+printf("%ld\n", sum);
 return (0);
 }
 
