@@ -2,8 +2,8 @@
 
 /**
  * _atoi -convert a string to an intiger.
- * @s: The pointer to convert 
- * Return: A intiger
+ * @s: The pointer to convert
+ * Return: A integer
  */
 
 int _atoi(char *s)
