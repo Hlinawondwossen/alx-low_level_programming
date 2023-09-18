@@ -4,7 +4,6 @@
  * swap_int -Swaps the valuees of two integers.
  * @x: The first intiger to be swapped.
  * @y: The second intiger to be swapped.
- *
  * Return: noting 
  */
 
