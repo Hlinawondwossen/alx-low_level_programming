@@ -12,6 +12,7 @@ void swap_int(int *x, int *y)
 /* the function that swaps the values of the two intigers. */
 {
 	int temp = *x;
+
 	*x = *y;
 	*y = temp;
 }
