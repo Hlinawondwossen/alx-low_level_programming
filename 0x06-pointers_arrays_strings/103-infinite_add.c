@@ -1,0 +1,73 @@
+#include "main.h"
+#include <stdio.h>
+
+/
+* rev_string - returns the string in reverse.
+* @s: pointer to a char
+* Return: nothing
+*/
+
+void rev_string(char *s)
+{
+int len = 0, i = 0;
+char *start = s;
+while (*s != '\0')
+{
+len++;
+s++;
+}
+
+for (i = 0; i < len / 2; i++)
+{
+char temp = start[i];
+start[i] = start[len - 1 - i];
+start[len - 1 - i] = temp;
+}
+}
+
+/
+ * infinite_add - adds two integers.
+ * @n1: The first pointer
+ * @n2: The second pointer
+ * @r: integer
+ * @size_r: integer
+ * Return: a pointer
+ */
+
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
+{
+int i = 0, j = 0, o = 0, d = 0, v1 = 0, v2 = 0, t = 0;
+while (*(n1 + i) != '\0')
+i++;
+while (*(n2 + j) != '\0')
+j++;
+i--;
+j--;
+if (i >= size_r  i >= 0 || o == 1)
+{
+if (i < 0)
+v1 = 0;
+else
+v1 = *(n1 + i) -'0';
+if (j < 0)
+v2 = 0;
+else
+v2 = *(n2 + j) -'0';
+t = v1 + v2 + o;
+if (t >= 10)
+o = 1;
+else
+o = 0;
+if (d >= (size_r - 1))
+return (0);
+*(r + d) = (t % 10) + '0';
+d++;
+i--;
+j--;
+}
+if (d == size_r)
+return (0);
+*(r + d) = '\0';
+rev_string(r);
+return (r);
+}
