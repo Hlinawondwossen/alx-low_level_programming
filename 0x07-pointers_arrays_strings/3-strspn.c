@@ -1,18 +1,34 @@
 #include "main.h"
 
 /**
- * _strcmp - compares strings.
- * @s1: The first pointer
- * @s2: The second pointer
- * Return: a pointer
+ * _strspn - gets the length of a substring.
+ * @s: The first pointer
+ * @accept: the second pointer
+ * Return: an integer
  */
 
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept)
 {
-while (*s1 && (*s1 == *s2))
+unsigned int count = 0;
+
+while (*s != '\0')
 {
-s1++;
-s2++;
+char *a = accept;
+while (*a != '\0')
+{
+if (*s == *a)
+{
+count++;
+break;
 }
-return (*(unsigned char *)s1 - *(unsigned char *)s2);
+a++;
+}
+
+if (*a == '\0')
+break;
+
+s++;
+}
+
+return (count);
 }
