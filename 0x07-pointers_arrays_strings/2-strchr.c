@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strchr - locates the string.
+ * _strchr - locates a string.
  * @s: The first pointer
  * @c: character
- * Return: pointer 
+ * Return: a pointer
  */
 
 char *_strchr(char *s, char c)
