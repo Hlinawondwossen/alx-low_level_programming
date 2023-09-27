@@ -1,7 +1,6 @@
 #include "main.h"
 
-
-/
+/**
  * _sqrt_recursion - square root of a number.
  * @n: integer
  * Return: method
@@ -14,7 +13,7 @@ return (-1);
 return (sqrt_check(n, 1));
 }
 
-/
+/**
  * sqrt_check - square root of a number.
  * @n: integer
  * @i: integer
