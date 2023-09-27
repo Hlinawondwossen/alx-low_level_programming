@@ -2,7 +2,7 @@
 
 int is_prime_helper(int n, int i);
 
-/
+/**
  * is_prime_number - returns if the number is prime.
  * @n: integer
  * Return: method
@@ -16,7 +16,7 @@ return (0);
 return (is_prime_helper(n, n - 1));
 }
 
-/
+/**
  * is_prime_helper - returns if the number is prime.
  * @n: integer
  * @i: integer
