@@ -2,27 +2,28 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strdup - duplicate space location
+ * _strdup - duplicate to new memory space location
  * @str: char
  * Return: 0
  */
 char *_strdup(char *str)
 {
-	char *y;
-	int i, r = 0;
+	char *aaa;
+	int x, a = 0;
 
 	if (str == NULL)
 		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-		i++;
+	x = 0;
+	while (str[x] != '\0')
+		x++;
 
-	y = malloc(sizeof(char) * (i + 1));
+	aaa = malloc(sizeof(char) * (x + 1));
 
-	if (y == NULL)
+	if (aaa == NULL)
 		return (NULL);
 
-	for (r = 0; str[r]; r++)
-		y[r] = str[r];
+	for (a = 0; str[a]; a++)
+		aaa[a] = str[a];
 
-	return (y);
+	return (aaa);
+}
