@@ -1,9 +1,9 @@
-#include <list.h>
+#include <stdio.h>
 
 void first(void) __attribute__ ((constructor));
 
 /**
- * first - a sentence before the main
+ * first - prints a sentence before the main
  * function is executed
  */
 void first(void)
