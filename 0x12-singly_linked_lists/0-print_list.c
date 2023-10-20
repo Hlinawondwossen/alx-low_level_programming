@@ -1,27 +1,26 @@
-#include <stdio.h>
 #include "lists.h"
+
 /**
- * print_list - function that prints all the elements of a list_t list.
- * @h: list of arguemtn in a linkedlist.
- * Return: a list.
+ * print_list - function  Prints all the elements of a list_t list.
+ * @h: Pointer  of the linked list.
+ * Return: Number of nodes.
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t count = 0;
+	size_t node_count = 0;
 
 	while (h != NULL)
 	{
 		if (h->str == NULL)
-		{
 			printf("[0] (nil)\n");
-		}
 		else
-		{
-			printf("[%d] %s\n", h->len, h->str);
-		}
+			printf("[%u] %s\n", h->len, h->str);
+
+		/* Updating pointer 'h' to point to next node */
 		h = h->next;
-		count++;
+		node_count++;
 	}
-	return (count);
+
+	return (node_count);
 }
