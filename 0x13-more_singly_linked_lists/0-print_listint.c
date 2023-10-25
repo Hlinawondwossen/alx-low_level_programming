@@ -13,7 +13,6 @@ size_t node_count = 0;
 while (h != NULL)
 {
 printf("%d\n", h->n);
-/* Updating pointer 'h' to point to next node */
 h = h->next;
 node_count++;
 }
