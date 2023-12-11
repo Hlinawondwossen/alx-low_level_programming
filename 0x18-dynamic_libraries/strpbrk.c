@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strpbrk - gets the first matching character in a string
  * @s: the initial segment
